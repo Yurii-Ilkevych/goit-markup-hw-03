@@ -17,23 +17,24 @@
     <!--шапка сайта-->
     <div class="container">
       <header>
-      <nav>
+        <div  class="primary-nav">
+      <nav  class="nav">
         <a href="./index.html" class="logo"
           >Web<span class="logo-head">Studio</span></a
         >
-        <ul class="site-nav list">
-          <li>
+        <ul class="site-nav list nav">
+          <li class="item">
             <a href="./studio.html" class="nav-link">Studio</a>
           </li>
-          <li>
+          <li class="item">
             <a href="./portfolio.html" class="nav-link">Portfolio</a>
           </li>
-          <li>
+          <li class="item">
             <a href="./index.html" class="nav-link">Contacts</a>
           </li>
         </ul>
       </nav>
-      <ul>
+      <ul class="list contact-nav">
         <li class="list contact">
           <a href="mailto:info@devstudio.com" class="contact"
             >info@devstudio.com</a
@@ -43,18 +44,19 @@
           <a href="tel:+110001111111" class="contact">+11 (000) 111-11-11</a>
         </li>
       </ul>
+    </div>
     </header>
   </div>
     <!-- "Main" сайта -->
     <main>
       <!-- Секция 1 герой  -->
-      <section class="section-hero section">
+      <section class="section-hero">
         <h1 class="hero">Effective Solutions for Your Business</h1>
         <button type="button" class="button-secondary">Order Service</button>
       </section>
       <!-- Секция 2 -->
-      <div class="container work-list">
-      <section class="section">
+      <div class="container">
+      <section class="section section-flex">
         <ul class="list">
           <li>
             <h2 class="section-text">Strategy</h2>
@@ -95,6 +97,7 @@
       <section class="section">
         <!-- Секция 3 -->
         <h2 class="section-text section-title">What are we doing</h2>
+        <div class="section-flex">
         <ul class="list">
           <li>
             <img src="./images/photo1.jpg" alt="Rectangle 71" width="360" />
@@ -111,36 +114,40 @@
           </li>
         </ul>
       </div>
+      </div>
       </section>
       <!-- Секция 4 -->
       <section class="work-list section section-four">
-        <h2 class="section-text section-title container">Our Team</h2>
-        <ul class="list">
-          <li class="list-li container">
+        <div class="container">
+        <h2 class="section-text section-title containe">Our Team</h2>
+        <ul class="list section-flex">
+          <li class="list-li containe">
             <img src="./images/img1.jpg" alt="Team Card" width="264" />
             <h3 class="section-text">Mark Guerrero</h3>
             <p>Product Designer</p>
           </li>
-          <li class="list-li container">
+          <li class="list-li containe">
             <img src="./images/img2.jpg" alt="Team Card" width="264" />
             <h3 class="section-text">Tom Ford</h3>
             <p>Frontend Developer</p>
           </li>
-          <li class="list-li container">
+          <li class="list-li containe">
             <img src="./images/img3.jpg" alt="Team Card" width="264" />
             <h3 class="section-text">Camila Garcia</h3>
             <p>Marketing</p>
           </li>
-          <li class="list-li container">
+          <li class="list-li containe">
             <img src="./images/img4.jpg" alt="Team Card" width="264" />
             <h3 class="section-text">Daniel Wilson</h3>
             <p>UI Designer</p>
           </li>
         </ul>
+      </div>
       </section>
     </main>
     <!-- Footer Сайта -->
     <footer class="section-footer">
+      <div class="container container-footer">
       <a href="./index.html" class="logo"
         >Web<span class="logo-footer">Studio</span></a
       >
@@ -148,6 +155,7 @@
         Increase the flow of customers and sales for your business with digital
         marketing & growth solutions.
       </p>
+    </div>
     </footer>
   
     

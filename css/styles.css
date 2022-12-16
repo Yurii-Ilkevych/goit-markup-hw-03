@@ -24,7 +24,6 @@ letter-spacing: 0.02em;
 
 
 
-
     outline: 2px solid tomato;
 }
 
@@ -59,13 +58,46 @@ letter-spacing: 0.03em;
 text-transform: uppercase;
 }
  /* навигация сайту */
+.nav {
+    display:flex ;
+    align-items: center;
+}
+
+.primary-nav {
+    display:flex ;
+    align-items: center;
+}
+
 .site-nav {
 font-weight: 600;
 font-size: 16px;
 line-height: 1.5;
+margin-left: 77px;
 }
 
+
+/* .site-nav .item {
+outline: 1px solid tomato;
+margin-right: 40px;
+}
+.site-nav .item:last-child {
+    margin-right: 0;} */
+
+/* .site-nav .item:not(:last-child) {
+    margin-right: 40px ;} */
+
+.site-nav .item + .item {
+ margin-left: 40px;
+}
+
+
+
 .nav-link {
+display: block;
+padding-top: 24px;
+padding-bottom: 24px;
+
+
 color: var(--title-text-color);
 text-decoration: none;
     }
@@ -88,9 +120,19 @@ color: var(--primary-text-color);
     color: var(--accent-color); 
     text-decoration: none;
 }
+/* Навигация */
+.contact-nav {
+    display: flex;
+    margin-left: auto;
+}
+
+.contact-nav .list + .list {
+margin-left: 40px;
+
+}
+
 /* контакти */
 .contact {
-    display: inline;
     color: var(--primary-text-color);
     text-decoration: none;
 
@@ -110,6 +152,9 @@ color: var(--primary-text-color);
 .section-hero {
     background-color: var(--title-text-color);
     text-align: center;
+    padding-top: 192px;
+    padding-bottom: 192px;
+    margin-bottom: 120px;
 }
 .hero {
     color: var(--white-color);
@@ -131,7 +176,22 @@ color: var(--primary-text-color);
     clip-path: inset(50%);
     margin: -1px;
 }
-
+.button-list{
+    display: flex;
+   
+}
+/* .button-list .item {
+    margin-right: 24px;
+}
+.button-list .item:last-child {
+    margin-right: 0;
+} */
+/* .button-list .item:not(:last-child) {
+    margin-right: 24px;
+} */
+.button-list .item + .item {
+    margin-left: 24px;
+}
 
 
 .button-secondary {
@@ -145,7 +205,6 @@ color: var(--primary-text-color);
     padding: 16px 32px;
     min-width: 170px;
     text-align: center;
-    margin-bottom: 328px;
 }
 .button-secondary:hover,
 .button-secondary:focus {
@@ -177,6 +236,11 @@ button {
 .section {
 padding-bottom: 120px;
 }
+.section-header {
+    padding-top: 96px;
+}
+
+
 .work-list:nth-child(odd) {
     background: var(--button-primary-color);
 }
@@ -197,6 +261,18 @@ margin-bottom: 8px;
 .section-four {
 /* background-color: var(--button-primary-color); */
 }
+
+.section-flex {
+    display: flex;
+}
+
+.section .list + .list {
+    margin-left: 24px;
+}
+.section .list-li + .list-li {
+    margin-left: 24px;
+}
+
 .list-li {
     background-color: var(--white-color);
 }
@@ -209,6 +285,7 @@ margin-bottom: 8px;
 
 .section-text.section-title {
     margin-bottom: 72px;
+   padding-top: 120px;
 }
 
 .decoration-list {
@@ -218,6 +295,12 @@ color: var(--primary-text-color);
     text-decoration: none;
 }
 /* footer сайта */ 
+
+.container-footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
 .section-footer {
 background-color: var(--title-text-color);
 }
@@ -237,4 +320,5 @@ background-color: var(--title-text-color);
  color: var(--button-primary-color) ;  
  font-size: 16px;
 line-height: 1.5; 
+margin-top: 16px;
 }
