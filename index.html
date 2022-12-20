@@ -18,9 +18,9 @@
   </head>
   <body>
     <!--шапка сайта-->
-    <div class="container">
+
       <header>
-        <div class="primary-nav">
+        <div class="primary-nav container">
           <nav class="nav">
             <a href="./index.html" class="logo"
               >Web<span class="logo-head">Studio</span></a
@@ -51,7 +51,7 @@
           </ul>
         </div>
       </header>
-    </div>
+   
     <!-- "Main" сайта -->
     <main>
       <!-- Секция 1 герой  -->
@@ -63,38 +63,31 @@
         <button type="button" class="button-secondary">Order Service</button>
       </section>
       <!-- Секция 2 -->
-      <div class="work-list">
         <section class="section no-padding">
-          <div class="section-flex container">
-            <ul class="list-li no-margin">
-              <li class="text-item">
+          <div class="container">
+            <ul class="no-margin no-padding-left section-flex">
+              <li class="text-item list-li">
                 <h2 class="section-text">Strategy</h2>
                 <p>
                   Our goal is to identify the business problem to walk away with
                   the perfect and creative solution.
                 </p>
               </li>
-            </ul>
-            <ul class="list-li no-margin">
-              <li class="text-item">
+              <li class="text-item list-li">
                 <h2 class="section-text">Punctuality</h2>
                 <p>
                   Bring the key message to the brand's audience for the best
                   price within the shortest possible time.
                 </p>
               </li>
-            </ul>
-            <ul class="list-li no-margin">
-              <li class="text-item">
+              <li class="text-item list-li">
                 <h2 class="section-text">Diligence</h2>
                 <p>
                   Research and confirm brands that present the strongest digital
                   growth opportunities and minimize risk.
                 </p>
               </li>
-            </ul>
-            <ul class="list-li no-margin">
-              <li class="text-item">
+              <li class="text-item list-li">
                 <h2 class="section-text">Technologies</h2>
                 <p>
                   Design practice focused on digital experiences. We bring forth
@@ -105,33 +98,28 @@
           </div>
         </section>
         <!-- Секция 3 -->
-        <section class="section container">
-          <h2 class="section-text section-three">What are we doing</h2>
-          <div class="section-flex">
-            <ul class="list-card list">
-              <li>
-                <img src="./images/photo1.jpg" alt="Rectangle 71" width="360" />
-              </li>
-            </ul>
-            <ul class="list-card list">
-              <li>
-                <img src="./images/photo2.jpg" alt="Rectangle 71" width="360" />
-              </li>
-            </ul>
-            <ul class="list-card list">
-              <li>
-                <img src="./images/photo3.jpg" alt="Rectangle 71" width="360" />
-              </li>
-            </ul>
-          </div>
-        </section>
-      </div>
-      <!-- Секция 4 -->
-      <div class="work-list">
         <section class="section">
+          <div class="container">
+            <h2 class="section-text section-three">What are we doing</h2>
+              <ul class="section-flex list">
+                <li class="list-card">
+                  <img src="./images/photo1.jpg" alt="Rectangle 71" width="360" />
+                </li>
+                <li class="list-card">
+                  <img src="./images/photo2.jpg" alt="Rectangle 71" width="360" />
+                </li>
+                <li class="list-card">
+                  <img src="./images/photo3.jpg" alt="Rectangle 71" width="360" />
+                </li>
+              </ul>
+            </div>
+          
+        </section>
+      <!-- Секция 4 -->
+        <section class="section work-list">
           <div class="container item">
             <h2 class="section-text section-title">Our Team</h2>
-            <ul class="section-flex no-padding-left">
+            <ul class="section-flex no-padding-left no-margin-top-bottom">
               <li class="list-li">
                 <img src="./images/img1.jpg" alt="Team Card" width="264" />
                 <div class="item">
@@ -163,11 +151,10 @@
             </ul>
           </div>
         </section>
-      </div>
     </main>
     <!-- Footer Сайта -->
     <footer class="section-footer">
-      <div class="container container-footer">
+      <div class="container">
         <a href="./index.html" class="logo"
           >Web<span class="logo-footer">Studio</span></a
         >
