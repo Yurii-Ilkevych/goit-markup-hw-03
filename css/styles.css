@@ -66,6 +66,11 @@ text-transform: uppercase;
     align-items: center;
  
 }
+
+.shadow-header {
+box-shadow:  0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);;
+}
+
 .border {
     box-shadow: 0px 0px 1px 0px var(--primary-text-color);
 }
@@ -208,10 +213,11 @@ margin-left: 40px;
     font-weight: 600;
     font-size: 16px;
     line-height: 1.19;
-    /* border-radius: 4px; */
+    border-radius: 4px;
     padding: 16px 32px;
     min-width: 170px;
     text-align: center;
+    border: none;
 }
 .button-secondary:hover,
 .button-secondary:focus {
@@ -279,9 +285,7 @@ margin-bottom: 8px;
     padding-left: 16px;
 padding-top: 32px;
 padding-bottom: 32px;
-border: 0.5px solid #F4F4FD;
-border-top: none;
-box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+
 }
 .text-card:hover,
 .text-card:focus {
@@ -406,7 +410,9 @@ img {
 width: calc((100% - 48px) / 3);
 margin-right: 24px;
 margin-bottom: 48px;
-/* box-shadow: 0px 0px 1px 0px var(--primary-text-color); */
+border: 0.5px solid #F4F4FD;
+border-top: none;
+box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 } 
 .card:nth-child(3n) {
 
@@ -447,9 +453,13 @@ margin-top: 16px;
 .no-padding-left {
     padding-left: 0;
 }
-.no-margin-top {
+.no-padding-top {
     padding-top: 0;
 }
+.no-margin-top {
+    margin-top: 0;
+}
+
 .no-margin {
     margin-bottom: 0;
 }
